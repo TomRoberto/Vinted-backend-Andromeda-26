@@ -17,7 +17,7 @@ cloudinary.config({
 });
 
 app.get("/", (req, res) => {
-  res.json({ message: "Coucou, c'est le projet Vinted de Tom" });
+  res.json({ message: "Boujour, c'est le projet Vinted de Tom" });
 });
 
 const userRoutes = require("./routes/user");
