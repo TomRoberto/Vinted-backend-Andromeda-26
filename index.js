@@ -16,6 +16,10 @@ cloudinary.config({
   api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 
+app.get("/", (req, res) => {
+  res.json({ message: "Coucou, c'est le projet Vinted de Tom" });
+});
+
 const userRoutes = require("./routes/user");
 const offerRoutes = require("./routes/offer");
 
